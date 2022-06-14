@@ -1,0 +1,133 @@
+body {
+    font-family: 'Asap',sans-serif;
+}
+/* header */
+
+.header-container {
+    min-height: 100px;
+    background-color: rgb(30, 28, 28);
+    margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+}
+
+header {
+    width: 1024px;
+    margin: 0 auto;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+}
+
+.mybutton {
+    color: darkgrey;
+    font-family: 'asap', sans-serif;
+    font-weight: bold;
+    padding: 11px 25px;
+    display: inline-block;
+    border-radius: 3px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.311);
+    border: 1px solid darkgrey;
+    text-decoration: none;
+    margin: 0 5px;
+    width: 70px;
+    text-align: center;
+}
+
+.mybutton:hover {
+    background-color: white;
+    color: black;
+}
+
+.higlight {
+    font-weight: bold;
+    color: green;
+    font-size: 1.5rem;
+}
+
+
+/* header */
+
+.container {
+    
+    margin: 0 auto;
+    width: 1024px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.col {
+    background-color: aqua;
+    min-height: 300px;
+    width: 323px;
+    margin-bottom: 40px;
+}
+
+.col p {
+    color: white;
+    font-size: 0.85rem;
+    padding: 20px 25px;
+    line-height: 1.5rem;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    
+    .hide-desktop-only {
+        display: block;
+    }
+
+    .container {
+        width: 45%;
+        display: inline-block;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .col {
+        width: 100%;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+/*     
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0;
+    }
+
+    .mybutton {
+        margin-left: 0;
+    } */
+}
